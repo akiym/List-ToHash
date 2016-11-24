@@ -4,7 +4,7 @@
       "Takumi Akiyama <t.akiym@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.6, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -52,6 +52,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/akiym/List-ToHash/issues"
+      },
+      "homepage" : "https://github.com/akiym/List-ToHash",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/akiym/List-ToHash.git",
+         "web" : "https://github.com/akiym/List-ToHash"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:AKIYM",
    "x_serialization_backend" : "JSON::PP version 2.27400"

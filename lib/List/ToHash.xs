@@ -7,14 +7,17 @@ extern "C" {
 #include <perl.h>
 #include <XSUB.h>
 
+#define NEED_sv_2pv_flags 1
+#include "ppport.h"
+
+#if PERL_BCDVERSION >= 0x5006000
+#  include "multicall.h"
+#endif
+
 #if PERL_BCDVERSION < 0x5023008
 #  define UNUSED_VAR_newsp PERL_UNUSED_VAR(newsp)
 #else
 #  define UNUSED_VAR_newsp NOOP
-#endif
-
-#if PERL_BCDVERSION >= 0x5006000
-#  include "multicall.h"
 #endif
 
 #ifndef CvISXSUB
@@ -28,9 +31,6 @@ extern "C" {
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
-
-#define NEED_newSVpvn_flags
-#include "ppport.h"
 
 MODULE = List::ToHash    PACKAGE = List::ToHash
 
