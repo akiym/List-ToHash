@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/akiym/List-ToHash.svg?branch=master)](https://travis-ci.org/akiym/List-ToHash)
 # NAME
 
 List::ToHash - List to hash which have unique keys
@@ -29,7 +30,7 @@ List::ToHash - List to hash which have unique keys
 
 # DESCRIPTION
 
-List::ToHash provides fast conversion list to hash.
+List::ToHash provides fast conversion list to hash by using lightweight callback API.
 
 `map` is so simple and good for readability. I usually use this in this situation.
 
@@ -63,11 +64,13 @@ List::ToHash is the fastest module in this benchmark `eg/bench.pl`.
     for     19303/s     44%      4%      --    -28%
     to_hash 26636/s     98%     44%     38%      --
 
-# FUNCITONS
+# FUNCTIONS
 
-## to\_hash
+- my $hashref = to\_hash { ... } @list;
 
-    my $hashref = to_hash { BLOCK } @list;
+    Returns the hash reference of given `@list` for which have the key returned by the block.
+
+        my $id_to_user_row = to_hash { $_->{id} } @user_rows;
 
 # LICENSE
 

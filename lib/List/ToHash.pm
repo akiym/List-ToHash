@@ -45,7 +45,7 @@ List::ToHash - List to hash which have unique keys
 
 =head1 DESCRIPTION
 
-List::ToHash provides fast conversion list to hash.
+List::ToHash provides fast conversion list to hash by using lightweight callback API.
 
 C<map> is so simple and good for readability. I usually use this in this situation.
 
@@ -79,11 +79,17 @@ List::ToHash is the fastest module in this benchmark C<eg/bench.pl>.
   for     19303/s     44%      4%      --    -28%
   to_hash 26636/s     98%     44%     38%      --
 
-=head1 FUNCITONS
+=head1 FUNCTIONS
 
-=head2 to_hash
+=over 4
 
-  my $hashref = to_hash { BLOCK } @list;
+=item my $hashref = to_hash { ... } @list;
+
+Returns the hash reference of given C<@list> for which have the key returned by the block.
+
+    my $id_to_user_row = to_hash { $_->{id} } @user_rows;
+
+=back
 
 =head1 LICENSE
 

@@ -1,5 +1,5 @@
 name = "List-ToHash"
-# badges = ["travis"]
+badges = ["travis"]
 authority="cpan:AKIYM"
 
 module_maker="ModuleBuildTiny"
