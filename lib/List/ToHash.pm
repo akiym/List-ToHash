@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Exporter 'import';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @EXPORT_OK = qw/to_hash/;
 
 use XSLoader;
