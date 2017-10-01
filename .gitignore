@@ -31,3 +31,4 @@ MYMETA.*
 /List-ToHash-*
 lib/List/ToHash.c
 !lib/List/ppport.h
+/temp
