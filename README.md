@@ -81,4 +81,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-Takumi Akiyama <t.akiym@gmail.com>
+Takumi Akiyama &lt;t.akiym@gmail.com>

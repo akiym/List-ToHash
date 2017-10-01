@@ -28,7 +28,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.035"
+            "Module::Build::Tiny" : "0.036"
          }
       },
       "develop" : {
@@ -65,5 +65,5 @@
    },
    "version" : "0.01",
    "x_authority" : "cpan:AKIYM",
-   "x_serialization_backend" : "JSON::PP version 2.27300"
+   "x_serialization_backend" : "JSON::PP version 2.27400"
 }
